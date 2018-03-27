@@ -1,0 +1,83 @@
+Path 1: MET Late External Delay Assertion 
+Endpoint:   sum[1]      (^) checked with  leading edge of 'clk'
+Beginpoint: f6_q_reg/QN (v) triggered by  leading edge of 'clk'
+Analysis View: default_setup_view
+Other End Arrival Time          0.000
+- External Delay              100.000
++ Path Delay                  200.000
+= Required Time               100.000
+- Arrival Time                 75.400
+= Slack Time                   24.600
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     +----------------------------------------------------------------------------------------------+ 
+     |       Pin       |  Edge |      Net      |         Cell         |  Delay | Arrival | Required | 
+     |                 |       |               |                      |        |  Time   |   Time   | 
+     |-----------------+-------+---------------+----------------------+--------+---------+----------| 
+     | clk             |   ^   | clk           |                      |        |   0.000 |   24.600 | 
+     | f6_q_reg/CLK    |   ^   | clk           | DFFHQNx4_ASAP7_75t_R |  0.000 |   0.000 |   24.600 | 
+     | f6_q_reg/QN     |   v   | n_13          | DFFHQNx4_ASAP7_75t_R | 31.300 |  31.300 |   55.900 | 
+     | FE_OFC7_n_13/A  |   v   | n_13          | BUFx6f_ASAP7_75t_R   |  0.100 |  31.400 |   56.000 | 
+     | FE_OFC7_n_13/Y  |   v   | FE_OFN7_n_13  | BUFx6f_ASAP7_75t_R   |  9.900 |  41.300 |   65.900 | 
+     | FE_OFC15_n_13/A |   v   | FE_OFN7_n_13  | BUFx12f_ASAP7_75t_R  |  0.100 |  41.400 |   66.000 | 
+     | FE_OFC15_n_13/Y |   v   | FE_OFN15_n_13 | BUFx12f_ASAP7_75t_R  |  9.500 |  50.900 |   75.500 | 
+     | FE_OFC5_n_13/A  |   v   | FE_OFN15_n_13 | BUFx12f_ASAP7_75t_R  |  0.100 |  51.000 |   75.600 | 
+     | FE_OFC5_n_13/Y  |   v   | FE_OFN5_n_13  | BUFx12f_ASAP7_75t_R  | 11.000 |  62.000 |   86.600 | 
+     | g191/A          |   v   | FE_OFN5_n_13  | INVx13_ASAP7_75t_R   |  0.200 |  62.200 |   86.800 | 
+     | g191/Y          |   ^   | sum[1]        | INVx13_ASAP7_75t_R   | 12.700 |  74.900 |   99.500 | 
+     | sum[1]          |   ^   | sum[1]        | adder_2bit           |  0.500 |  75.400 |  100.000 | 
+     +----------------------------------------------------------------------------------------------+ 
+Path 2: MET Late External Delay Assertion 
+Endpoint:   sum[0]      (^) checked with  leading edge of 'clk'
+Beginpoint: f5_q_reg/QN (v) triggered by  leading edge of 'clk'
+Analysis View: default_setup_view
+Other End Arrival Time          0.000
+- External Delay              100.000
++ Path Delay                  200.000
+= Required Time               100.000
+- Arrival Time                 66.600
+= Slack Time                   33.400
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     +----------------------------------------------------------------------------------------------+ 
+     |       Pin       |  Edge |      Net      |         Cell         |  Delay | Arrival | Required | 
+     |                 |       |               |                      |        |  Time   |   Time   | 
+     |-----------------+-------+---------------+----------------------+--------+---------+----------| 
+     | clk             |   ^   | clk           |                      |        |   0.000 |   33.400 | 
+     | f5_q_reg/CLK    |   ^   | clk           | DFFHQNx4_ASAP7_75t_R |  0.000 |   0.000 |   33.400 | 
+     | f5_q_reg/QN     |   v   | n_14          | DFFHQNx4_ASAP7_75t_R | 31.100 |  31.100 |   64.500 | 
+     | FE_OFC13_n_14/A |   v   | n_14          | BUFx6f_ASAP7_75t_R   |  0.000 |  31.100 |   64.500 | 
+     | FE_OFC13_n_14/Y |   v   | FE_OFN13_n_14 | BUFx6f_ASAP7_75t_R   | 10.800 |  41.900 |   75.300 | 
+     | FE_OFC4_n_14/A  |   v   | FE_OFN13_n_14 | BUFx12f_ASAP7_75t_R  |  0.100 |  42.000 |   75.400 | 
+     | FE_OFC4_n_14/Y  |   v   | FE_OFN4_n_14  | BUFx12f_ASAP7_75t_R  | 11.300 |  53.300 |   86.700 | 
+     | g196/A          |   v   | FE_OFN4_n_14  | INVx13_ASAP7_75t_R   |  0.200 |  53.500 |   86.900 | 
+     | g196/Y          |   ^   | sum[0]        | INVx13_ASAP7_75t_R   | 12.800 |  66.300 |   99.700 | 
+     | sum[0]          |   ^   | sum[0]        | adder_2bit           |  0.300 |  66.600 |  100.000 | 
+     +----------------------------------------------------------------------------------------------+ 
+Path 3: MET Late External Delay Assertion 
+Endpoint:   cout        (^) checked with  leading edge of 'clk'
+Beginpoint: f7_q_reg/QN (v) triggered by  leading edge of 'clk'
+Analysis View: default_setup_view
+Other End Arrival Time          0.000
+- External Delay              100.000
++ Path Delay                  200.000
+= Required Time               100.000
+- Arrival Time                 65.300
+= Slack Time                   34.700
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     +----------------------------------------------------------------------------------------------+ 
+     |       Pin       |  Edge |      Net      |         Cell         |  Delay | Arrival | Required | 
+     |                 |       |               |                      |        |  Time   |   Time   | 
+     |-----------------+-------+---------------+----------------------+--------+---------+----------| 
+     | clk             |   ^   | clk           |                      |        |   0.000 |   34.700 | 
+     | f7_q_reg/CLK    |   ^   | clk           | DFFHQNx4_ASAP7_75t_R |  0.000 |   0.000 |   34.700 | 
+     | f7_q_reg/QN     |   v   | n_12          | DFFHQNx4_ASAP7_75t_R | 31.200 |  31.200 |   65.900 | 
+     | FE_OFC12_n_12/A |   v   | n_12          | BUFx6f_ASAP7_75t_R   |  0.000 |  31.200 |   65.900 | 
+     | FE_OFC12_n_12/Y |   v   | FE_OFN12_n_12 | BUFx6f_ASAP7_75t_R   |  9.700 |  40.900 |   75.600 | 
+     | FE_OFC6_n_12/A  |   v   | FE_OFN12_n_12 | BUFx12f_ASAP7_75t_R  |  0.100 |  41.000 |   75.700 | 
+     | FE_OFC6_n_12/Y  |   v   | FE_OFN6_n_12  | BUFx12f_ASAP7_75t_R  | 11.300 |  52.300 |   87.000 | 
+     | g193/A          |   v   | FE_OFN6_n_12  | INVx13_ASAP7_75t_R   |  0.100 |  52.400 |   87.100 | 
+     | g193/Y          |   ^   | cout          | INVx13_ASAP7_75t_R   | 12.600 |  65.000 |   99.700 | 
+     | cout            |   ^   | cout          | adder_2bit           |  0.300 |  65.300 |  100.000 | 
+     +----------------------------------------------------------------------------------------------+ 

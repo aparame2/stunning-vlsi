@@ -1,0 +1,3 @@
+encounter 7> reportGateCount 
+Gate area 0.6998 um^2
+[0] conv_pool Gates=56492 Cells=21832 Area=39535.6 um^2

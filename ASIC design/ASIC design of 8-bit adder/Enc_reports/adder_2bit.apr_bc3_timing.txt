@@ -1,0 +1,111 @@
+Path 8: MET Setup Check with Pin f4_q_reg/CLK 
+Endpoint:   f4_q_reg/D (^) checked with  leading edge of 'clk'
+Beginpoint: b[1]       (^) triggered by  leading edge of 'clk'
+Analysis View: default_setup_view
+Other End Arrival Time          0.000
+- Setup                         6.300
++ Path Delay                  200.000
+= Required Time               193.700
+- Arrival Time                100.000
+= Slack Time                   93.700
+     Clock Rise Edge                      0.000
+     + Input Delay                      100.000
+     = Beginpoint Arrival Time          100.000
+     Timing Path:
+     +--------------------------------------------------------------------------------+ 
+     |    Pin     |  Edge |  Net  |         Cell         | Delay | Arrival | Required | 
+     |            |       |       |                      |       |  Time   |   Time   | 
+     |------------+-------+-------+----------------------+-------+---------+----------| 
+     | b[1]       |   ^   | b[1]  |                      |       | 100.000 |  193.700 | 
+     | f4_q_reg/D |   ^   | b[1]  | DFFHQNx4_ASAP7_75t_R | 0.000 | 100.000 |  193.700 | 
+     +--------------------------------------------------------------------------------+ 
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     Other End Path:
+     +----------------------------------------------------------------------------------+ 
+     |     Pin      |  Edge |  Net  |         Cell         | Delay | Arrival | Required | 
+     |              |       |       |                      |       |  Time   |   Time   | 
+     |--------------+-------+-------+----------------------+-------+---------+----------| 
+     | clk          |   ^   | clk   |                      |       |   0.000 |  -93.700 | 
+     | f4_q_reg/CLK |   ^   | clk   | DFFHQNx4_ASAP7_75t_R | 0.000 |   0.000 |  -93.700 | 
+     +----------------------------------------------------------------------------------+ 
+Path 9: MET Setup Check with Pin f6_q_reg/CLK 
+Endpoint:   f6_q_reg/D  (v) checked with  leading edge of 'clk'
+Beginpoint: f3_q_reg/QN (v) triggered by  leading edge of 'clk'
+Path Groups: {reg2reg}
+Analysis View: default_setup_view
+Other End Arrival Time          0.000
+- Setup                         9.700
++ Path Delay                  200.000
+= Required Time               190.300
+- Arrival Time                 96.600
+= Slack Time                   93.700
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     Timing Path:
+     +---------------------------------------------------------------------------------------------+ 
+     |      Pin      |  Edge |     Net     |          Cell           |  Delay | Arrival | Required | 
+     |               |       |             |                         |        |  Time   |   Time   | 
+     |---------------+-------+-------------+-------------------------+--------+---------+----------| 
+     | clk           |   ^   | clk         |                         |        |   0.000 |   93.700 | 
+     | f3_q_reg/CLK  |   ^   | clk         | DFFHQNx4_ASAP7_75t_R    |  0.000 |   0.000 |   93.700 | 
+     | f3_q_reg/QN   |   v   | b0          | DFFHQNx4_ASAP7_75t_R    | 31.200 |  31.200 |  124.900 | 
+     | FE_OFC3_b0/A  |   v   | b0          | BUFx6f_ASAP7_75t_R      |  0.000 |  31.200 |  124.900 | 
+     | FE_OFC3_b0/Y  |   v   | FE_OFN3_b0  | BUFx6f_ASAP7_75t_R      |  9.700 |  40.900 |  134.600 | 
+     | FE_OFC16_b0/A |   v   | FE_OFN3_b0  | BUFx4_ASAP7_75t_R       |  0.000 |  40.900 |  134.600 | 
+     | FE_OFC16_b0/Y |   v   | FE_OFN16_b0 | BUFx4_ASAP7_75t_R       | 13.900 |  54.800 |  148.500 | 
+     | g2/B          |   v   | FE_OFN16_b0 | NOR2xp33_ASAP7_75t_R    |  0.000 |  54.800 |  148.500 | 
+     | g2/Y          |   ^   | n_53        | NOR2xp33_ASAP7_75t_R    | 11.000 |  65.800 |  159.500 | 
+     | g3/A          |   ^   | n_53        | INVx1_ASAP7_75t_R       |  0.000 |  65.800 |  159.500 | 
+     | g3/Y          |   v   | n_54        | INVx1_ASAP7_75t_R       | 10.100 |  75.900 |  169.600 | 
+     | g195/A        |   v   | n_54        | XNOR2xp5_ASAP7_75t_R_v2 |  0.100 |  76.000 |  169.700 | 
+     | g195/Y        |   v   | n_9         | XNOR2xp5_ASAP7_75t_R_v2 | 20.500 |  96.500 |  190.200 | 
+     | f6_q_reg/D    |   v   | n_9         | DFFHQNx4_ASAP7_75t_R    |  0.100 |  96.600 |  190.300 | 
+     +---------------------------------------------------------------------------------------------+ 
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     Other End Path:
+     +----------------------------------------------------------------------------------+ 
+     |     Pin      |  Edge |  Net  |         Cell         | Delay | Arrival | Required | 
+     |              |       |       |                      |       |  Time   |   Time   | 
+     |--------------+-------+-------+----------------------+-------+---------+----------| 
+     | clk          |   ^   | clk   |                      |       |   0.000 |  -93.700 | 
+     | f6_q_reg/CLK |   ^   | clk   | DFFHQNx4_ASAP7_75t_R | 0.000 |   0.000 |  -93.700 | 
+     +----------------------------------------------------------------------------------+ 
+Path 10: MET Setup Check with Pin f5_q_reg/CLK 
+Endpoint:   f5_q_reg/D  (v) checked with  leading edge of 'clk'
+Beginpoint: f1_q_reg/QN (v) triggered by  leading edge of 'clk'
+Path Groups: {reg2reg}
+Analysis View: default_setup_view
+Other End Arrival Time          0.000
+- Setup                        14.900
++ Path Delay                  200.000
+= Required Time               185.100
+- Arrival Time                 52.700
+= Slack Time                  132.400
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     Timing Path:
+     +------------------------------------------------------------------------------------------+ 
+     |     Pin      |  Edge |    Net     |          Cell          |  Delay | Arrival | Required | 
+     |              |       |            |                        |        |  Time   |   Time   | 
+     |--------------+-------+------------+------------------------+--------+---------+----------| 
+     | clk          |   ^   | clk        |                        |        |   0.000 |  132.400 | 
+     | f1_q_reg/CLK |   ^   | clk        | DFFHQNx4_ASAP7_75t_R   |  0.000 |   0.000 |  132.400 | 
+     | f1_q_reg/QN  |   v   | a0         | DFFHQNx4_ASAP7_75t_R   | 31.200 |  31.200 |  163.600 | 
+     | FE_OFC2_a0/A |   v   | a0         | BUFx6f_ASAP7_75t_R     |  0.000 |  31.200 |  163.600 | 
+     | FE_OFC2_a0/Y |   v   | FE_OFN2_a0 | BUFx6f_ASAP7_75t_R     |  9.500 |  40.700 |  173.100 | 
+     | g200/B       |   v   | FE_OFN2_a0 | XOR2xp5_ASAP7_75t_R_v2 |  0.000 |  40.700 |  173.100 | 
+     | g200/Y       |   v   | n_4        | XOR2xp5_ASAP7_75t_R_v2 | 12.000 |  52.700 |  185.100 | 
+     | f5_q_reg/D   |   v   | n_4        | DFFHQNx4_ASAP7_75t_R   |  0.000 |  52.700 |  185.100 | 
+     +------------------------------------------------------------------------------------------+ 
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     Other End Path:
+     +----------------------------------------------------------------------------------+ 
+     |     Pin      |  Edge |  Net  |         Cell         | Delay | Arrival | Required | 
+     |              |       |       |                      |       |  Time   |   Time   | 
+     |--------------+-------+-------+----------------------+-------+---------+----------| 
+     | clk          |   ^   | clk   |                      |       |   0.000 | -132.400 | 
+     | f5_q_reg/CLK |   ^   | clk   | DFFHQNx4_ASAP7_75t_R | 0.000 |   0.000 | -132.400 | 
+     +----------------------------------------------------------------------------------+ 

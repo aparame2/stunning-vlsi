@@ -1,0 +1,623 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-nets
+	-slack_lesser_than 60.000000
+	-max_paths 50
+	-sort_by slack
+Design : conv_pool
+Version: K-2015.06-SP1
+Date   : Mon Apr 24 12:58:35 2017
+****************************************
+
+
+  Startpoint: f1_img6_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: f2_af31_reg[3]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                      Fanout       Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  f1_img6_reg[0]/CLK (DFFHQNx4_ASAP7_75t_R)           0.000000   0.000000 r
+  f1_img6_reg[0]/QN (DFFHQNx4_ASAP7_75t_R)            30.360809 &
+                                                                 30.360809 f
+  n_1552 (net)                                  1 
+  FE_OCPC424_n_1552/Y (BUFx12f_ASAP7_75t_R)           24.588715 &
+                                                                 54.949524 f
+  FE_OCPN424_n_1552 (net)                      17 
+  a0_mul_493_19/g12679/Y (AOI22xp33_ASAP7_75t_R)      20.858231 &
+                                                                 75.807755 r
+  a0_mul_493_19/n_166 (net)                     1 
+  a0_mul_493_19/g12578/Y (OA22x2_ASAP7_75t_R)         21.231117 &
+                                                                 97.038872 r
+  a0_mul_493_19/n_237 (net)                     2 
+  a0_mul_493_19/g12497/Y (NOR2x1_ASAP7_75t_R)         9.342171 & 106.381042 f
+  a0_mul_493_19/n_299 (net)                     2 
+  a0_mul_493_19/g12481/Y (NOR2x1_ASAP7_75t_R)         7.683624 & 114.064667 r
+  a0_mul_493_19/n_307 (net)                     1 
+  a0_mul_493_19/g12941/Y (XNOR2xp5_ASAP7_75t_R_v2)    55.195709 &
+                                                                 169.260376 r
+  a0_mul_493_19/Z[3] (net)                      1 
+  f2_af31_reg[3]/D (DFFHQNx2_ASAP7_75t_R)             0.465958 & 169.726334 r
+  data arrival time                                              169.726334
+
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  clock reconvergence pessimism                       0.000000   0.000000
+  f2_af31_reg[3]/CLK (DFFHQNx2_ASAP7_75t_R)                      0.000000 r
+  library hold time                                   166.473663 166.473663
+  data required time                                             166.473663
+  ------------------------------------------------------------------------------
+  data required time                                             166.473663
+  data arrival time                                              -169.726334
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    3.252670
+
+
+  Startpoint: f1_img6_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: f2_af31_reg[4]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                      Fanout       Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  f1_img6_reg[0]/CLK (DFFHQNx4_ASAP7_75t_R)           0.000000   0.000000 r
+  f1_img6_reg[0]/QN (DFFHQNx4_ASAP7_75t_R)            30.360809 &
+                                                                 30.360809 f
+  n_1552 (net)                                  1 
+  FE_OCPC424_n_1552/Y (BUFx12f_ASAP7_75t_R)           24.588715 &
+                                                                 54.949524 f
+  FE_OCPN424_n_1552 (net)                      17 
+  a0_mul_493_19/g12679/Y (AOI22xp33_ASAP7_75t_R)      20.858231 &
+                                                                 75.807755 r
+  a0_mul_493_19/n_166 (net)                     1 
+  a0_mul_493_19/g12578/Y (OA22x2_ASAP7_75t_R)         21.231117 &
+                                                                 97.038872 r
+  a0_mul_493_19/n_237 (net)                     2 
+  a0_mul_493_19/g12497/Y (NOR2x1_ASAP7_75t_R)         9.342163 & 106.381035 f
+  a0_mul_493_19/n_299 (net)                     2 
+  a0_mul_493_19/g12493/Y (INVx1_ASAP7_75t_R)          6.232048 & 112.613083 r
+  a0_mul_493_19/n_300 (net)                     1 
+  a0_mul_493_19/g12465/Y (OA21x2_ASAP7_75t_R)         15.272003 &
+                                                                 127.885086 r
+  a0_mul_493_19/n_322 (net)                     3 
+  a0_mul_493_19/g12414/Y (XNOR2xp5_ASAP7_75t_R_v2)    61.267593 &
+                                                                 189.152679 r
+  a0_mul_493_19/Z[4] (net)                      1 
+  f2_af31_reg[4]/D (DFFHQNx3_ASAP7_75t_R)             0.449799 & 189.602478 r
+  data arrival time                                              189.602478
+
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  clock reconvergence pessimism                       0.000000   0.000000
+  f2_af31_reg[4]/CLK (DFFHQNx3_ASAP7_75t_R)                      0.000000 r
+  library hold time                                   177.403076 177.403076
+  data required time                                             177.403076
+  ------------------------------------------------------------------------------
+  data required time                                             177.403076
+  data arrival time                                              -189.602478
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    12.199402
+
+
+  Startpoint: f1_img11_reg[3]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: f2_af09_reg[5]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                      Fanout       Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  f1_img11_reg[3]/CLK (DFFHQNx4_ASAP7_75t_R)          0.000000   0.000000 r
+  f1_img11_reg[3]/QN (DFFHQNx4_ASAP7_75t_R)           28.350830 &
+                                                                 28.350830 r
+  n_1643 (net)                                  1 
+  FE_OCPC2576_n_1643/Y (BUFx12f_ASAP7_75t_R)          20.886581 &
+                                                                 49.237411 r
+  FE_OCPN2576_n_1643 (net)                     17 
+  a0_mul_471_20/g12685/Y (AOI22xp33_ASAP7_75t_R)      17.671745 &
+                                                                 66.909157 f
+  a0_mul_471_20/n_177 (net)                     2 
+  a0_mul_471_20/g12597/Y (OA22x2_ASAP7_75t_R)         21.791176 &
+                                                                 88.700333 f
+  a0_mul_471_20/n_220 (net)                     3 
+  a0_mul_471_20/FE_RC_911_0/Y (NAND2xp5_ASAP7_75t_R)  8.411606 & 97.111938 r
+  a0_mul_471_20/FE_RN_512_0 (net)               1 
+  a0_mul_471_20/FE_RC_909_0/Y (NAND2x1_ASAP7_75t_R)   10.506363 &
+                                                                 107.618301 f
+  a0_mul_471_20/n_288 (net)                     2 
+  a0_mul_471_20/g12446/Y (NOR2x1_ASAP7_75t_R)         9.173393 & 116.791695 r
+  a0_mul_471_20/n_335 (net)                     2 
+  a0_mul_471_20/g12445/Y (INVx1_ASAP7_75t_R)          5.739128 & 122.530823 f
+  a0_mul_471_20/n_336 (net)                     1 
+  a0_mul_471_20/g12423/Y (NAND2xp5_ASAP7_75t_R)       7.918274 & 130.449097 r
+  a0_mul_471_20/n_350 (net)                     1 
+  a0_mul_471_20/g12395/Y (XNOR2xp5_ASAP7_75t_R_v2)    57.791031 &
+                                                                 188.240128 r
+  a0_mul_471_20/Z[5] (net)                      1 
+  f2_af09_reg[5]/D (DFFHQNx3_ASAP7_75t_R)             0.507782 & 188.747910 r
+  data arrival time                                              188.747910
+
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  clock reconvergence pessimism                       0.000000   0.000000
+  f2_af09_reg[5]/CLK (DFFHQNx3_ASAP7_75t_R)                      0.000000 r
+  library hold time                                   169.820709 169.820709
+  data required time                                             169.820709
+  ------------------------------------------------------------------------------
+  data required time                                             169.820709
+  data arrival time                                              -188.747910
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    18.927200
+
+
+  Startpoint: f1_img10_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: f2_af08_reg[5]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                      Fanout       Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  f1_img10_reg[0]/CLK (DFFHQNx4_ASAP7_75t_R)          0.000000   0.000000 r
+  f1_img10_reg[0]/QN (DFFHQNx4_ASAP7_75t_R)           28.744629 &
+                                                                 28.744629 r
+  n_1648 (net)                                  1 
+  FE_OCPC398_n_1648/Y (BUFx12f_ASAP7_75t_R)           19.441597 &
+                                                                 48.186226 r
+  FE_OCPN398_n_1648 (net)                      10 
+  a0_mul_470_20/g12669/Y (AOI21_x2_ASAP7_75t_R)       13.496429 &
+                                                                 61.682655 f
+  a0_mul_470_20/n_171 (net)                     1 
+  a0_mul_470_20/g12638/Y (NOR2x1_ASAP7_75t_R)         11.655876 &
+                                                                 73.338531 r
+  a0_mul_470_20/n_202 (net)                     2 
+  a0_mul_470_20/g12549/Y (NAND2xp5_ASAP7_75t_R)       13.397324 &
+                                                                 86.735855 f
+  a0_mul_470_20/n_259 (net)                     2 
+  a0_mul_470_20/g12462/Y (NOR2x1_ASAP7_75t_R)         13.417648 &
+                                                                 100.153503 r
+  a0_mul_470_20/n_329 (net)                     3 
+  a0_mul_470_20/g12452/Y (INVx1_ASAP7_75t_R)          5.870193 & 106.023697 f
+  a0_mul_470_20/n_328 (net)                     1 
+  a0_mul_470_20/g12427/Y (OAI21xp5_ASAP7_75t_R_v2)    6.285156 & 112.308853 r
+  a0_mul_470_20/n_348 (net)                     1 
+  a0_mul_470_20/g12395/Y (XNOR2xp5_ASAP7_75t_R_v2)    49.025818 &
+                                                                 161.334671 r
+  a0_mul_470_20/Z[5] (net)                      1 
+  f2_af08_reg[5]/D (DFFHQNx3_ASAP7_75t_R)             0.356705 & 161.691376 r
+  data arrival time                                              161.691376
+
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  clock reconvergence pessimism                       0.000000   0.000000
+  f2_af08_reg[5]/CLK (DFFHQNx3_ASAP7_75t_R)                      0.000000 r
+  library hold time                                   142.149109 142.149109
+  data required time                                             142.149109
+  ------------------------------------------------------------------------------
+  data required time                                             142.149109
+  data arrival time                                              -161.691376
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    19.542267
+
+
+  Startpoint: f1_img6_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: f2_af31_reg[5]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                      Fanout       Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  f1_img6_reg[0]/CLK (DFFHQNx4_ASAP7_75t_R)           0.000000   0.000000 r
+  f1_img6_reg[0]/QN (DFFHQNx4_ASAP7_75t_R)            28.883896 &
+                                                                 28.883896 r
+  n_1552 (net)                                  1 
+  FE_OCPC424_n_1552/Y (BUFx12f_ASAP7_75t_R)           24.561966 &
+                                                                 53.445862 r
+  FE_OCPN424_n_1552 (net)                      17 
+  a0_mul_493_19/g12679/Y (AOI22xp33_ASAP7_75t_R)      17.040215 &
+                                                                 70.486076 f
+  a0_mul_493_19/n_166 (net)                     1 
+  a0_mul_493_19/g12578/Y (OA22x2_ASAP7_75t_R)         22.083542 &
+                                                                 92.569618 f
+  a0_mul_493_19/n_237 (net)                     2 
+  a0_mul_493_19/g12497/Y (NOR2x1_ASAP7_75t_R)         9.763435 & 102.333054 r
+  a0_mul_493_19/n_299 (net)                     2 
+  a0_mul_493_19/g12493/Y (INVx1_ASAP7_75t_R)          5.508232 & 107.841286 f
+  a0_mul_493_19/n_300 (net)                     1 
+  a0_mul_493_19/g12465/Y (OA21x2_ASAP7_75t_R)         12.462479 &
+                                                                 120.303764 f
+  a0_mul_493_19/n_322 (net)                     3 
+  a0_mul_493_19/g12427/Y (OAI21xp5_ASAP7_75t_R_v2)    11.447594 &
+                                                                 131.751358 r
+  a0_mul_493_19/n_348 (net)                     1 
+  a0_mul_493_19/g12395/Y (XNOR2xp5_ASAP7_75t_R_v2)    60.498337 &
+                                                                 192.249695 r
+  a0_mul_493_19/Z[5] (net)                      1 
+  f2_af31_reg[5]/D (DFFHQNx3_ASAP7_75t_R)             0.504471 & 192.754166 r
+  data arrival time                                              192.754166
+
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  clock reconvergence pessimism                       0.000000   0.000000
+  f2_af31_reg[5]/CLK (DFFHQNx3_ASAP7_75t_R)                      0.000000 r
+  library hold time                                   172.163742 172.163742
+  data required time                                             172.163742
+  ------------------------------------------------------------------------------
+  data required time                                             172.163742
+  data arrival time                                              -192.754166
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    20.590424
+
+
+  Startpoint: f1_kernel5_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: f2_af25_reg[1]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                      Fanout       Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  f1_kernel5_reg[0]/CLK (DFFHQNx4_ASAP7_75t_R)        0.000000   0.000000 r
+  f1_kernel5_reg[0]/QN (DFFHQNx4_ASAP7_75t_R)         30.277195 &
+                                                                 30.277195 f
+  n_1488 (net)                                  1 
+  FE_OCPC343_n_1488/Y (BUFx12f_ASAP7_75t_R)           21.459576 &
+                                                                 51.736771 f
+  FE_OCPN343_n_1488 (net)                      14 
+  a0_mul_487_20/g12596/Y (OA22x2_ASAP7_75t_R)         20.787132 &
+                                                                 72.523903 f
+  a0_mul_487_20/n_221 (net)                     2 
+  a0_mul_487_20/g12533/Y (AOI21_x2_ASAP7_75t_R)       10.201454 &
+                                                                 82.725357 r
+  a0_mul_487_20/Z[1] (net)                      1 
+  f2_af25_reg[1]/D (DFFHQNx1_ASAP7_75t_R)             0.005936 & 82.731293 r
+  data arrival time                                              82.731293
+
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  clock reconvergence pessimism                       0.000000   0.000000
+  f2_af25_reg[1]/CLK (DFFHQNx1_ASAP7_75t_R)                      0.000000 r
+  library hold time                                   54.860703  54.860703
+  data required time                                             54.860703
+  ------------------------------------------------------------------------------
+  data required time                                             54.860703
+  data arrival time                                              -82.731293
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    27.870590
+
+
+  Startpoint: f1_sh_reg_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: f2_sh_reg_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                      Fanout       Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  f1_sh_reg_reg[0]/CLK (DFFHQNx4_ASAP7_75t_R)         0.000000   0.000000 r
+  f1_sh_reg_reg[0]/QN (DFFHQNx4_ASAP7_75t_R)          27.747459 &
+                                                                 27.747459 r
+  sh_reg_1[0] (net)                             1 
+  g20545/Y (INVx1_ASAP7_75t_R)                        3.732336 & 31.479795 f
+  n_310 (net)                                   1 
+  f2_sh_reg_reg[0]/D (DFFHQNx4_ASAP7_75t_R)           0.010740 & 31.490536 f
+  data arrival time                                              31.490536
+
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  clock reconvergence pessimism                       0.000000   0.000000
+  f2_sh_reg_reg[0]/CLK (DFFHQNx4_ASAP7_75t_R)                    0.000000 r
+  library hold time                                   3.211718   3.211718
+  data required time                                             3.211718
+  ------------------------------------------------------------------------------
+  data required time                                             3.211718
+  data arrival time                                              -31.490536
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    28.278818
+
+
+  Startpoint: f1_sh_reg_reg[1]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: f2_sh_reg_reg[1]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                      Fanout       Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  f1_sh_reg_reg[1]/CLK (DFFHQNx4_ASAP7_75t_R)         0.000000   0.000000 r
+  f1_sh_reg_reg[1]/QN (DFFHQNx4_ASAP7_75t_R)          27.216232 &
+                                                                 27.216232 r
+  sh_reg_1[1] (net)                             1 
+  g20546/Y (INVx1_ASAP7_75t_R)                        6.055149 & 33.271381 f
+  n_309 (net)                                   1 
+  f2_sh_reg_reg[1]/D (DFFHQNx4_ASAP7_75t_R)           0.014442 & 33.285824 f
+  data arrival time                                              33.285824
+
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  clock reconvergence pessimism                       0.000000   0.000000
+  f2_sh_reg_reg[1]/CLK (DFFHQNx4_ASAP7_75t_R)                    0.000000 r
+  library hold time                                   2.586158   2.586158
+  data required time                                             2.586158
+  ------------------------------------------------------------------------------
+  data required time                                             2.586158
+  data arrival time                                              -33.285824
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    30.699665
+
+
+  Startpoint: f1_kernel3_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: f2_af23_reg[3]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                      Fanout       Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  f1_kernel3_reg[0]/CLK (DFFHQNx4_ASAP7_75t_R)        0.000000   0.000000 r
+  f1_kernel3_reg[0]/QN (DFFHQNx4_ASAP7_75t_R)         28.468109 &
+                                                                 28.468109 r
+  n_1504 (net)                                  1 
+  FE_OCPC364_n_1504/Y (BUFx12f_ASAP7_75t_R)           17.243996 &
+                                                                 45.712105 r
+  FE_OCPN364_n_1504 (net)                       9 
+  FE_OCPC365_n_1504/Y (HB1xp67_ASAP7_75t_R)           17.275795 &
+                                                                 62.987900 r
+  FE_OCPN365_n_1504 (net)                       1 
+  FE_OCPC816_n_1504/Y (BUFx12_ASAP7_75t_R)            21.039551 &
+                                                                 84.027451 r
+  FE_OCPN816_n_1504 (net)                       6 
+  a0_mul_485_19/g12595/Y (OA22x2_ASAP7_75t_R)         17.128479 &
+                                                                 101.155930 r
+  a0_mul_485_19/n_222 (net)                     2 
+  a0_mul_485_19/g12544/Y (NOR2x1_ASAP7_75t_R)         8.116348 & 109.272278 f
+  a0_mul_485_19/n_264 (net)                     2 
+  a0_mul_485_19/g12537/Y (INVx1_ASAP7_75t_R)          7.078369 & 116.350647 r
+  a0_mul_485_19/n_265 (net)                     1 
+  a0_mul_485_19/g12501/Y (OA21x2_ASAP7_75t_R)         14.520752 &
+                                                                 130.871399 r
+  a0_mul_485_19/n_297 (net)                     2 
+  a0_mul_485_19/g12941/Y (XNOR2xp5_ASAP7_75t_R_v2)    41.193054 &
+                                                                 172.064453 r
+  a0_mul_485_19/Z[3] (net)                      1 
+  f2_af23_reg[3]/D (DFFHQNx3_ASAP7_75t_R)             0.297119 & 172.361572 r
+  data arrival time                                              172.361572
+
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  clock reconvergence pessimism                       0.000000   0.000000
+  f2_af23_reg[3]/CLK (DFFHQNx3_ASAP7_75t_R)                      0.000000 r
+  library hold time                                   129.763519 129.763519
+  data required time                                             129.763519
+  ------------------------------------------------------------------------------
+  data required time                                             129.763519
+  data arrival time                                              -172.361572
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    42.598053
+
+
+  Startpoint: f1_kernel3_reg[4]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: f2_af23_reg[5]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                      Fanout       Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  f1_kernel3_reg[4]/CLK (DFFHQNx4_ASAP7_75t_R)        0.000000   0.000000 r
+  f1_kernel3_reg[4]/QN (DFFHQNx4_ASAP7_75t_R)         29.624481 &
+                                                                 29.624481 r
+  n_1508 (net)                                  1 
+  FE_OCPC387_n_1508/Y (BUFx12f_ASAP7_75t_R)           17.087677 &
+                                                                 46.712158 r
+  FE_OCPN387_n_1508 (net)                       7 
+  g21191/Y (INVx11_ASAP7_75t_R)                       8.909805 H 55.621964 f
+  kernel3_4 (net)                              20 
+  a0_mul_485_19/g12670/Y (OAI21xp5_ASAP7_75t_R_v2)    11.020927 H
+                                                                 66.642891 r
+  a0_mul_485_19/n_170 (net)                     1 
+  a0_mul_485_19/g12637/Y (NAND2x1_ASAP7_75t_R)        19.455154 &
+                                                                 86.098045 f
+  a0_mul_485_19/n_203 (net)                     2 
+  a0_mul_485_19/g12947/Y (XOR2x1_ASAP7_75t_R)         14.748116 &
+                                                                 100.846161 r
+  a0_mul_485_19/n_9 (net)                       2 
+  a0_mul_485_19/g12477_dup/Y (XNOR2xp5_ASAP7_75t_R_v2)
+                                                      15.180069 &
+                                                                 116.026230 f
+  a0_mul_485_19/FE_RN_8 (net)                   2 
+  a0_mul_485_19/g12446/Y (NOR2x1_ASAP7_75t_R)         13.340378 &
+                                                                 129.366608 r
+  a0_mul_485_19/n_335 (net)                     2 
+  a0_mul_485_19/g12445/Y (INVx1_ASAP7_75t_R)          5.601532 & 134.968140 f
+  a0_mul_485_19/n_336 (net)                     1 
+  a0_mul_485_19/g12423/Y (NAND2xp5_ASAP7_75t_R)       8.443970 & 143.412109 r
+  a0_mul_485_19/n_350 (net)                     1 
+  a0_mul_485_19/g12395/Y (XNOR2xp5_ASAP7_75t_R_v2)    44.893326 &
+                                                                 188.305435 r
+  a0_mul_485_19/Z[5] (net)                      1 
+  f2_af23_reg[5]/D (DFFHQNx3_ASAP7_75t_R)             0.390121 & 188.695557 r
+  data arrival time                                              188.695557
+
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  clock reconvergence pessimism                       0.000000   0.000000
+  f2_af23_reg[5]/CLK (DFFHQNx3_ASAP7_75t_R)                      0.000000 r
+  library hold time                                   137.491364 137.491364
+  data required time                                             137.491364
+  ------------------------------------------------------------------------------
+  data required time                                             137.491364
+  data arrival time                                              -188.695557
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    51.204193
+
+
+  Startpoint: conv_kernel[7]
+               (input port clocked by clk)
+  Endpoint: f1_kernel1_reg[7]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                      Fanout       Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  input external delay                                100.000000 100.000000 r
+  conv_kernel[7] (in)                                 0.000001 & 100.000001 r
+  conv_kernel[7] (net)                          1 
+  f1_kernel1_reg[7]/D (DFFHQNx1_ASAP7_75t_R)          0.006136 & 100.006137 r
+  data arrival time                                              100.006137
+
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  clock reconvergence pessimism                       0.000000   0.000000
+  f1_kernel1_reg[7]/CLK (DFFHQNx1_ASAP7_75t_R)                   0.000000 r
+  library hold time                                   46.643829  46.643829
+  data required time                                             46.643829
+  ------------------------------------------------------------------------------
+  data required time                                             46.643829
+  data arrival time                                              -100.006137
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    53.362309
+
+
+  Startpoint: conv_kernel[3]
+               (input port clocked by clk)
+  Endpoint: f1_kernel1_reg[3]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                      Fanout       Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  input external delay                                100.000000 100.000000 r
+  conv_kernel[3] (in)                                 0.000001 & 100.000001 r
+  conv_kernel[3] (net)                          1 
+  f1_kernel1_reg[3]/D (DFFHQNx1_ASAP7_75t_R)          0.006219 & 100.006219 r
+  data arrival time                                              100.006219
+
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  clock reconvergence pessimism                       0.000000   0.000000
+  f1_kernel1_reg[3]/CLK (DFFHQNx1_ASAP7_75t_R)                   0.000000 r
+  library hold time                                   46.643890  46.643890
+  data required time                                             46.643890
+  ------------------------------------------------------------------------------
+  data required time                                             46.643890
+  data arrival time                                              -100.006219
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    53.362328
+
+
+  Startpoint: conv_kernel[10]
+               (input port clocked by clk)
+  Endpoint: f1_kernel2_reg[2]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                      Fanout       Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  input external delay                                100.000000 100.000000 r
+  conv_kernel[10] (in)                                0.000001 & 100.000001 r
+  conv_kernel[10] (net)                         1 
+  f1_kernel2_reg[2]/D (DFFHQNx1_ASAP7_75t_R)          0.005384 & 100.005385 r
+  data arrival time                                              100.005385
+
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  clock reconvergence pessimism                       0.000000   0.000000
+  f1_kernel2_reg[2]/CLK (DFFHQNx1_ASAP7_75t_R)                   0.000000 r
+  library hold time                                   46.642891  46.642891
+  data required time                                             46.642891
+  ------------------------------------------------------------------------------
+  data required time                                             46.642891
+  data arrival time                                              -100.005385
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    53.362495
+
+
+  Startpoint: f1_kernel4_reg[1]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: f2_af24_reg[1]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                      Fanout       Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  f1_kernel4_reg[1]/CLK (DFFHQNx4_ASAP7_75t_R)        0.000000   0.000000 r
+  f1_kernel4_reg[1]/QN (DFFHQNx4_ASAP7_75t_R)         30.076546 &
+                                                                 30.076546 f
+  n_1497 (net)                                  1 
+  FE_OCPC262_n_1497/Y (BUFx12f_ASAP7_75t_R)           19.108963 &
+                                                                 49.185509 f
+  FE_OCPN262_n_1497 (net)                      18 
+  g21310/Y (INVx13_ASAP7_75t_R)                       35.036308 &
+                                                                 84.221817 r
+  kernel4[1] (net)                             39 
+  a0_mul_486_19/g12666/Y (NAND2x1_ASAP7_75t_R)        16.854897 &
+                                                                 101.076714 f
+  a0_mul_486_19/n_193 (net)                     2 
+  a0_mul_486_19/g12533/Y (AOI21_x2_ASAP7_75t_R)       19.496216 &
+                                                                 120.572929 r
+  a0_mul_486_19/Z[1] (net)                      1 
+  f2_af24_reg[1]/D (DFFHQNx1_ASAP7_75t_R)             0.029259 & 120.602188 r
+  data arrival time                                              120.602188
+
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  clock reconvergence pessimism                       0.000000   0.000000
+  f2_af24_reg[1]/CLK (DFFHQNx1_ASAP7_75t_R)                      0.000000 r
+  library hold time                                   65.809036  65.809036
+  data required time                                             65.809036
+  ------------------------------------------------------------------------------
+  data required time                                             65.809036
+  data arrival time                                              -120.602188
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    54.793152
+
+
+1
