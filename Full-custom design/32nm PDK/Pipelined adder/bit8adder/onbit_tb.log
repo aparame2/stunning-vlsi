@@ -1,0 +1,2 @@
+Using: /usr/local/synopsys/hspice_2015.06/hspice/linux64/hspice  -i 'onbit_tb.sp'
+ lic: total license checkout elapse time:        0.00(s)

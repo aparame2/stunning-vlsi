@@ -1,0 +1,12 @@
+CADENCE IHNL01070
+$model
+Project/C2MOS/schematic C2MOS
+Project/onbit/schematic onbit
+Project/bit1/schematic bit1
+$endmodel
+$net
+gnd! gnd!
+vcc! vcc!
+$endnet
+$param
+$endparam

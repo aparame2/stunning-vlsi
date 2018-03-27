@@ -1,0 +1,32 @@
+.TEMP 25
+.OPTION
+
+.param pvcc =1.05
+.param period1 =2n
+.param period2 =4n
+.param period3 =8n
+.param tr =30p
+.param tf =30p
+.param pw1 ='(period1/2)-((tr+tf)/2)'
+.param pw2 ='(period2/2)-((tr+tf)/2)'
+.param pw3 ='(period3/2)-((tr+tf)/2)'
+
+.lib '/afs/asu.edu/users/a/p/a/aparame2/425_lab/iPDK/hspice/saed32nm.lib' TT
+.include "./1bit.sp"
+
+Vgnd !gnd 0 DC=0
+Vvcc vcc! 0 DC=1.05
+X1 A B Ci Coutbar Sumbar 1bitadder
+
+VA A 0 PULSE(0 1.05 1n tr tf pw1 period1)
+VB B 0 PULSE(0 1.05 2n tr tf pw2 period2)
+VCi Ci 0 PULSE(0 1.05 4n tr tf pw3 period3)
+
+.measure tran current INTEGRAL i(Vvcc) from=2n to=10n
+.measure TRAN t_phl  TRIG v(X.A) VAL = '0.5*pvcc' RISE = 3 TARG v(X.Sumbar) VAL ='0.5*pvcc' FALL = 3
+.measure TRAN t_plh TRIG v(X.A) VAL = '0.5*pvcc' FALL = 3 TARG v(X.Sumbar) VAL ='0.5*pvcc' RISE = 3 
+
+.tran 2p 10n Start=0.0
+.probe v(*)
+.option post
+.end

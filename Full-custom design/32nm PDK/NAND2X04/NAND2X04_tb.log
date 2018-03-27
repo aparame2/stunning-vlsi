@@ -1,0 +1,78 @@
+Using: /usr/local/synopsys/hspice_2015.06/hspice/linux64/hspice  -i 'NAND2X04_tb.sp'
+ ****** HSPICE -- K-2015.06-2 linux64 (Jun 25 2015) ******                      
+  Copyright (c) 1986 - 2016 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: NAND2X04_tb.sp                                                    
+  Command line options: /usr/local/synopsys/hspice_2015.06/hspice/linux64/hspice -i NAND2X04_tb.sp
+ lic:  
+ lic: FLEXlm: v11.2.1 
+ lic: USER:   aparame2             HOSTNAME: eecad30.eas.asu.edu 
+ lic: HOSTID: 989096d61107         PID:      8781 
+ lic: Using FLEXlm license file: 
+ lic: 27020@enlicense9.eas.asu.edu 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 18-jul-2017/2016.06 
+ lic: 9(in_use)/150(total) FLOATING license(s) on SERVER 27020@enlicense9.eas.asu.edu 
+ lic:   
+ Init: read install configuration file: /usr/local/synopsys/hspice_2015.06/hspice/meta.cfg
+  **error** (NAND2X04_tb.sp:17) Definition of model/subckt "gnd!" is not found for the element "x1". Please specify a defined model/subckt name.
+
+          ***** job aborted
+1****** HSPICE -- K-2015.06-2 linux64 (Jun 25 2015) ******                      
+ ******  
+ .temp 25
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Xeon(R) CPU E3-1246 v3 @ 3.50GHz
+ cpu MHz	: 3501.000
+  
+ OS:
+ Linux version 2.6.32-642.3.1.el6.x86_64 (mockbuild@x86-029.build.eng.bos.redhat.com) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-17) (GCC) ) #1 SMP Sun Jun 26 18:16:44 EDT 2016
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =       0 # elements   =       5
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       0 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           0
+  readin             0.03
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        192.61 megabytes
+           total cpu time            0.03 seconds
+           total elapsed time        0.13 seconds
+           job started at     14:39:13 10/05/2016
+           job ended   at     14:39:13 10/05/2016
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.11(s)

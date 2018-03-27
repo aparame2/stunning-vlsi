@@ -1,0 +1,10 @@
+CADENCE IHNL01070
+$model
+Project/C2MOS/schematic C2MOS
+$endmodel
+$net
+gnd! gnd!
+vcc! vcc!
+$endnet
+$param
+$endparam

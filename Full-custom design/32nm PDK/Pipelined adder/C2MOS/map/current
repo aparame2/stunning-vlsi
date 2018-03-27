@@ -1,0 +1,25 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "C2MOS"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  globalList "vcc! gnd!"
+  hierDelim "."
+  netlistDir "/afs/asu.edu/users/a/p/a/aparame2/425_lab/Project/C2MOS"
+ )
+( instViewTable
+ )
+( net
+ )
+( inst
+ )
+( model
+( "Project/C2MOS/schematic" "C2MOS" )
+ )
+( term
+ )
+( param
+ )
+( "C2MOS" "ihnl/cds0/map" )
+ )

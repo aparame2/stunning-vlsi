@@ -1,0 +1,25 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "onbit"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  globalList "gnd! vcc!"
+  hierDelim "."
+  netlistDir "/afs/asu.edu/users/a/p/a/aparame2/425_lab/Project/onbit/netlist/"
+ )
+( instViewTable
+ )
+( net
+ )
+( inst
+ )
+( model
+( "Project/onbit/schematic" "onbit" )
+ )
+( term
+ )
+( param
+ )
+( "onbit" "ihnl/cds0/map" )
+ )

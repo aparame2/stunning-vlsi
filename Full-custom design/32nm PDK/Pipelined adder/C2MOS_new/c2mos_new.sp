@@ -1,0 +1,46 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  Project
+* Top Cell Name: C2MOS_new
+* View Name:     schematic
+* Netlisted on:  Nov 20 19:10:26 2016
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+.GLOBAL vcc!
++        gnd!
+
+*.PIN vcc!
+*+    gnd!
+
+************************************************************************
+* Library Name: Project
+* Cell Name:    C2MOS_new
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT C2MOS_new D Q clk clkb
+*.PININFO D:I clk:I clkb:I Q:O
+MM6 net18 net8 gnd! gnd! n105 w=300n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+MM4 Q clk net18 gnd! n105 m=1 w=300n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+MM2 net21 D gnd! gnd! n105 m=1 w=300n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+MM0 net8 clkb net21 gnd! n105 m=1 w=300n l=30n ad=10.5f as=10.5f pd=310n 
++ ps=310n
+MM7 Q clkb net19 vcc! p105 m=1 w=360n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+MM5 net19 net8 vcc! vcc! p105 m=1 w=360n l=30n ad=10.5f as=10.5f pd=310n 
++ ps=310n
+MM3 net8 clk net20 vcc! p105 m=1 w=360n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+MM1 net20 D vcc! vcc! p105 m=1 w=360n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+.ENDS
+

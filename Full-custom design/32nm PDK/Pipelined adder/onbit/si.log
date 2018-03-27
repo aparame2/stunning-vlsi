@@ -1,0 +1,4 @@
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.06s.
+*INFO* (icLic-25) License Virtuoso_Schematic_Editor_XL ("Schematics XL") was used to run Schematics L.
+Running Artist Hierarchical Netlisting ...
+*Error* _emsGetMsg: argument #5 should be a list (type template = "ooxtl") - "/afs/asu.edu/users/a/p/a/aparame2/425_lab/Project/onbit/netlist"

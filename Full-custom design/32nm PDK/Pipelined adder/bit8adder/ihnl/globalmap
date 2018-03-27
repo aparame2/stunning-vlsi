@@ -1,0 +1,12 @@
+CADENCE IHNL01070
+$model
+Project/bit8adder/schematic bit8adder
+Project/C2MOS/schematic C2MOS
+Test_425/onbit/schematic onbit
+$endmodel
+$net
+gnd! gnd!
+vcc! vcc!
+$endnet
+$param
+$endparam

@@ -1,0 +1,10 @@
+CADENCE IHNL01070
+$model
+Project/onbit/schematic onbit
+$endmodel
+$net
+gnd! gnd!
+vcc! vcc!
+$endnet
+$param
+$endparam

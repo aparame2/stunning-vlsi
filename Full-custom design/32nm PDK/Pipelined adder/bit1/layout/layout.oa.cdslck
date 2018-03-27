@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      aparame2
+HostName                       eecad15.eas.asu.edu
+ProcessIdentifier              9869
+ProcessCreationTime_UTC        1479761978
+ProcessCreationTime_Readable   Mon Nov 21 13:59:38 2016 MST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /afs/asu.edu/users/a/p/a/aparame2/425_lab/Project/bit1/layout/layout.oa.cdslck
+TimeEditLocked                 Mon Nov 21 14:09:39 2016 MST

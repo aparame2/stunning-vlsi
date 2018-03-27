@@ -1,0 +1,68 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  Test_425
+* Top Cell Name: 1bitadder
+* View Name:     schematic
+* Netlisted on:  Nov 11 13:45:19 2016
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+.GLOBAL vcc!
++        gnd!
+
+*.PIN vcc!
+*+    gnd!
+
+************************************************************************
+* Library Name: Test_425
+* Cell Name:    1bitadder
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT 1bitadder A B Ci Coutbar Sumbar
+*.PININFO A:I B:I Ci:I Coutbar:O Sumbar:O
+XMM33 Sumbar Ci net41 gnd! n105 m=3 w=100n l=30n ad=10.5f as=10.5f pd=310n 
++ ps=310n
+XMM29 net41 A net42 gnd! n105 m=3 w=100n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+XMM28 net42 B gnd! gnd! n105 m=3 w=100n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+XMM20 net27 Ci gnd! gnd! n105 m=2 w=100n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+XMM24 Sumbar Coutbar net27 gnd! n105 m=2 w=100n l=30n ad=10.5f as=10.5f pd=310n 
++ ps=310n
+XMM19 net27 B gnd! gnd! n105 m=2 w=100n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+XMM18 net27 A gnd! gnd! n105 m=2 w=100n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+XMM17 net43 B gnd! gnd! n105 m=2 w=100n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+XMM16 Coutbar A net43 gnd! n105 m=2 w=100n l=30n ad=10.5f as=10.5f pd=310n 
++ ps=310n
+XMM12 net12 B gnd! gnd! n105 m=2 w=100n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+XMM4 Coutbar Ci net12 gnd! n105 m=2 w=100n l=30n ad=10.5f as=10.5f pd=310n 
++ ps=310n
+XMM5 net12 A gnd! gnd! n105 m=2 w=100n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+XMM32 Sumbar Ci net40 vcc! p105 m=6 w=100n l=30n ad=10.5f as=10.5f pd=310n 
++ ps=310n
+XMM31 net40 B net39 vcc! p105 m=6 w=100n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+XMM30 net39 A vcc! vcc! p105 m=6 w=100n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+XMM23 net26 Ci vcc! vcc! p105 m=4 w=100n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+XMM25 Sumbar Coutbar net26 vcc! p105 m=4 w=100n l=30n ad=10.5f as=10.5f pd=310n 
++ ps=310n
+XMM22 net26 B vcc! vcc! p105 m=4 w=100n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+XMM21 net26 A vcc! vcc! p105 m=4 w=100n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+XMM15 net44 B vcc! vcc! p105 m=4 w=100n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+XMM14 Coutbar A net44 vcc! p105 m=4 w=100n l=30n ad=10.5f as=10.5f pd=310n 
++ ps=310n
+XMM13 net14 B vcc! vcc! p105 m=4 w=100n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+XMM2 Coutbar Ci net14 vcc! p105 m=4 w=100n l=30n ad=10.5f as=10.5f pd=310n 
++ ps=310n
+XMM1 net14 A vcc! vcc! p105 m=4 w=100n l=30n ad=10.5f as=10.5f pd=310n ps=310n
+.ENDS
+

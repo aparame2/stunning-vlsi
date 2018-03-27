@@ -1,0 +1,68 @@
+****** HSPICE -- K-2015.06-2 linux64 (Jun 25 2015) ******
+ Input File: INVX03_tb.sp
+ lic:
+ lic: FLEXlm: v11.2.1
+ lic: USER:   aparame2             HOSTNAME: eecad28.eas.asu.edu
+ lic: HOSTID: 989096d61879         PID:      17503
+ lic: Using FLEXlm license file:
+ lic: 27020@enlicense9.eas.asu.edu
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 18-jul-2017/2016.06
+ lic: 7(in_use)/150(total) FLOATING license(s) on SERVER 27020@enlicense9.eas.asu.edu
+ lic:
+ init: begin read circuit files,  cpu clock=  1.80E-01
+       option search = /usr/local/synopsys/hspice_2015.06/hspice/parts/
+                         ad
+       option search = /usr/local/synopsys/hspice_2015.06/hspice/parts/
+                         ad
+       option search = /usr/local/synopsys/hspice_2015.06/hspice/parts/
+                         behave
+       option search = /usr/local/synopsys/hspice_2015.06/hspice/parts/
+                         bjt
+       option search = /usr/local/synopsys/hspice_2015.06/hspice/parts/
+                         burr_brn
+       option search = /usr/local/synopsys/hspice_2015.06/hspice/parts/
+                         comlinear
+       option search = /usr/local/synopsys/hspice_2015.06/hspice/parts/
+                         dio
+       option search = /usr/local/synopsys/hspice_2015.06/hspice/parts/
+                         fet
+       option search = /usr/local/synopsys/hspice_2015.06/hspice/parts/
+                         lin_tech
+       option search = /usr/local/synopsys/hspice_2015.06/hspice/parts/
+                         pci
+       option search = /usr/local/synopsys/hspice_2015.06/hspice/parts/
+                         signet
+       option search = /usr/local/synopsys/hspice_2015.06/hspice/parts/
+                         ti
+       option search = /usr/local/synopsys/hspice_2015.06/hspice/parts/
+                         tline
+       option search = /usr/local/synopsys/hspice_2015.06/hspice/parts/
+                         xilinx
+       option runlvl
+       option post
+ init: end read circuit files,  cpu clock=  1.80E-01 peak memory=       199 mb
+ init: begin check errors,  cpu clock=  1.80E-01
+ **warning**  No DC path to ground from node        1:                6
+ init: end check errors,  cpu clock=  2.10E-01 peak memory=       202 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  2.10E-01
+       establish matrix -- done,  cpu clock=  2.10E-01 peak memory=       202 mb
+       re-order matrix -- done,  cpu clock=  2.10E-01 peak memory=       202 mb
+ init: end setup matrix,  cpu clock=  2.20E-01 peak memory=       202 mb
+ dcop: begin dcop,  cpu clock=  2.20E-01
+ dcop: end dcop,  cpu clock=  2.30E-01 peak memory=       202 mb  tot_iter=       8
+ output: INVX03_tb.tr0
+ sweep: tran tran0    begin, stop_t=  1.20E-08 #sweeps=6001 cpu clock=  2.30E-01
+ tran: time= 1.2121E-09 tot_iter=     121 conv_iter=      54 cpu clock= 2.30E-01
+ tran: time= 2.4850E-09 tot_iter=     214 conv_iter=      96 cpu clock= 2.30E-01
+ tran: time= 3.6287E-09 tot_iter=     334 conv_iter=     149 cpu clock= 2.40E-01
+ tran: time= 4.8029E-09 tot_iter=     423 conv_iter=     188 cpu clock= 2.40E-01
+ tran: time= 6.0150E-09 tot_iter=     517 conv_iter=     230 cpu clock= 2.40E-01
+ tran: time= 7.2013E-09 tot_iter=     641 conv_iter=     285 cpu clock= 2.50E-01
+ tran: time= 8.4121E-09 tot_iter=     728 conv_iter=     324 cpu clock= 2.50E-01
+ tran: time= 9.6448E-09 tot_iter=     845 conv_iter=     376 cpu clock= 2.50E-01
+ tran: time= 1.0800E-08 tot_iter=     938 conv_iter=     417 cpu clock= 2.50E-01
+ tran: time= 1.2000E-08 tot_iter=    1031 conv_iter=     458 cpu clock= 2.50E-01
+ sweep: tran tran0    end,  cpu clock=  2.50E-01 peak memory=       202 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

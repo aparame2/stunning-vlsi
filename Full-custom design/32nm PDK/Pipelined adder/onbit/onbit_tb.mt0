@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='K-2015.06-2 linux64'
+.TITLE '.temp25'
+ tphl1            tplh1            tphl2            tplh2           
+ temper           alter#          
+    failed           failed           failed           failed       
+   25.0000        1               

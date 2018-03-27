@@ -1,0 +1,29 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "bit41"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  globalList "vcc! gnd!"
+  hierDelim "."
+  netlistDir "/afs/asu.edu/users/a/p/a/aparame2/425_lab/Project/bit41"
+ )
+( instViewTable
+ )
+( net
+ )
+( inst
+ )
+( model
+( "Project/C2MOS/schematic" "C2MOS" )
+( "Project/bit41/schematic" "bit41" )
+( "Project/onbit/schematic" "onbit" )
+ )
+( term
+ )
+( param
+ )
+( "onbit" "ihnl/cds1/map" )
+( "bit41" "ihnl/cds2/map" )
+( "C2MOS" "ihnl/cds0/map" )
+ )
